@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alimentos Solidarios Alimentando Esperanças">
+  <meta name="author" content="Joel, Polyana">
+  <link rel="shortcut icon" href="/assets/img/logo/icon-site.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="/assets/css/receptDoacao.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//code.responsivevoice.org' />
+  <link rel='dns-prefetch' href='//vlibras.gov.br' />
+  <script src="/assets/js/recpt_imagens.js" defer></script>
+  <script src="/assets/js/cadastroInstit.js" defer></script>
+  <script src="/assets/js/receptores.js" defer></script>
+  <title>Receptores de Doação</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-3 header">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/assets/img/logo/logo-site.png" alt="Logotipo do site" width="50"
+                    class="d-inline-block align-text-center me-3">Alimentos Solidários
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="formCadAlim.html">Cadastro de Alimentos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="receptDoacao.html">Instituições cadastradas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="aprendamais.html">Aprenda mais</a>
+                  </li>
+                </ul>
+              <div class="navbar-nav col-3 col-md-2 mt-2">
+                <a class="nav-link active text-center bg-secondary rounded mb-10 p-2" href="formCadDoacoes.html">Doe agora</a>
+              </div>
+        </div>
+    </nav>
+    
+    <main>
+      <div class="container-md col-lg-8 col-xl-6">
+        <div></div>
+        <div>
+              <h3 class="fw-bold">Cadastre aqui sua Instituição para receber nossas doações</h3>
+              <form id="formNovaInstituicao">
+                  <div class="row mb-3 g-3">
+                      <div class="col-12">
+                          <label class="col-form-label-sm form-label" for="nome">Nome da Instituição Receptora</label>
+                          <input class="form-control" type="text" id="nome" placeholder=" ">
+                      </div>
+                      <div class="col-6 d-none">
+                          <input class="form-control" type="text" id="id" placeholder=" ">
+                      </div>
+                      
+                      <div class="col-12">
+                          <label class="col-form-label-sm form-label" for="description">Descrição</label>
+                          <textarea class="form-control" rows="2" id="descricao" placeholder=" "></textarea>
+                      </div>
+                      <div class="col-6">
+                          <label class="col-form-label-sm form-label" for="email">E-mail</label>
+                          <input class="form-control" type="email" id="email" placeholder="name@example.com">
+                      </div>
+                      <div class="col-6">
+                          <label class="col-form-label-sm form-label" for="telefone">Telefone</label>
+                          <input class="form-control" type="tel" id="telefone" placeholder="(99)9999-9999">
+                      </div>
+                      <div class="col-12">
+                          <label class="col-form-label-sm form-label" for="endereco">Endereço</label>
+                          <textarea class="form-control" rows="1" id="endereco" placeholder=" "></textarea>
+                      </div>
+                      <div class="col-12">
+                          <label class="col-form-label-sm form-label" for="imagem">Imagem</label>
+                          <select class="form-control" id="imagem">
+                              <option value="">Escolha uma imagem para a instituição...</option>
+                          </select>
+                      </div>
+                      <div>
+                          <button id="btnSalvar" type="submit" class="btn btn-secondary col-2 mb-3">Salvar</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+          <hr>
+        <div class="container-fluid">
+           <div class="row">
+              <div class="col-12 col-lg-8 col-xl-6 ">
+                <h4 class="fw-bold">Beneficiárias de Nossas Doações</h4>
+                <hr>
+                <div class="accordion" 
+                    id="accordionInstituicoes">
+                </div> 
+              </div>
+          </div>
+      </div>
+      <br>
+    </main>
+
+  <footer class="border-top text-muted bg-light fixed-bottom">
+      <div class="container-fluid footer">
+          <div class="row py-3">
+            <div class="col-lg-12 col-lg-4 text-center text-md-left">
+              &copy; 2024 - Alimentos Solidários &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Realização:
+              <img src="assets/img/logo-reprogramese/preferencial-horizontal-branca.png" alt="Logo-reprogramese" width="90" class="d-inline-block align-text-center me-3">
+              <img src="assets/img/logo-action/horizontal-negativa.png" alt="logo-action" width="90" class="d-inline-block align-text-center me-3">
+              <img src="assets/img/logo-ifes/ifes-horizontal-branco.png" alt="logo-ifes" width="120" class="d-inline-block align-text-center me-3">
+            </div>
+
+          </div>
+      </div>
+  </footer>
+
+</body>
+
+</html>

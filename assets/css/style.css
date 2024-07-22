@@ -1,0 +1,110 @@
+/*configurações da paleta de cores*/
+:root {
+  --bs-primary: #4CAF50;    /* Verde */
+  --bs-secondary: #FF9800;  /* Laranja */
+  --bs-dark: #795548;       /* Marrom */
+  --bs-light: #ffffff;      /* Branco */
+  --bs-body: #000000;       /* Preto */
+}
+
+.carousel-caption h5 {
+    color: #ffffff; 
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
+.bg-dark {
+  background-color: var(--bs-dark) !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary);
+  color: var(--bs-dark);
+  font-weight: bold;
+}
+
+.btn-dark {
+  background-color: var(--bs-dark);
+}
+
+.footer, .header{
+  background: linear-gradient(to right, #795548, #5D4037);
+  color: var(--bs-light);
+}
+
+.primary-color{
+  background-color: var(--bs-primary);
+}
+
+body {
+  color: var(--bs-body);
+  background-color: var(--bs-primary);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--bs-dark);
+}
+
+
+  /*Configuração dos titulos*/
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #000000; /*pendente ajuste usando para visualização*/
+  }
+
+
+/*Fonte para os demais itens da página*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: Light;
+    font-style: normal;
+    color: #000000; /*pendente ajuste usando para visualização*/
+  }
+
+  .texto{
+    text-align: justify;
+  }
+
+  .texto-as{
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+/*configuração imagem card*/
+.card-img-top {
+    height: 200px;  /* Ajuste este valor conforme necessário */
+    object-fit: cover;  /* Isso fará com que a imagem cubra toda a área disponível, cortando as partes que não cabem se necessário */
+}
+
+/*alinha texto no body modal*/
+.text-justify {
+  text-align: justify;
+}
+
+textarea
+{
+  width:100%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.video {
+    width: 30%; /* Defina a largura desejada para os vídeos */
+    margin-right: 10px;
+}

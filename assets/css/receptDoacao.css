@@ -1,0 +1,51 @@
+/* style.css */
+
+/* Importing font family */
+@import url( 
+"https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"); 
+
+/* style accordion */
+.accordion { 
+  margin: 5%; 
+  text-align: left; 
+} 
+
+/* style for accordion items */
+.accordion-item { 
+  border-bottom: 1px solid #ddd; 
+  font-size: larger; 
+} 
+
+/* Style for accordion head/title */
+.accordion-header { 
+  background-color: #f5f5f5; 
+  padding: 10px; 
+  cursor: pointer; 
+} 
+
+/* Accordion item description */
+.accordion-content { 
+  padding: 10px; 
+  display: none; 
+} 
+
+/* Input box and button */
+.add { 
+  padding: auto; 
+} 
+
+#title { 
+  width: 4vw; 
+  font-size: larger; 
+} 
+
+#description { 
+  font-size: large; 
+  width: 14vw; 
+} 
+
+textarea
+{
+  width:100%;
+}
+
